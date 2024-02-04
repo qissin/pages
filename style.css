@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600&family=Roboto+Mono:ital,wght@0,500;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+  overflow: hidden;
+}
+
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  --width: calc(100vw - 10px);
+  width: var(--width);
+  background-color: #fff;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #bbb;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #222;
+}
+
+a.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  padding-inline: 1em 2em;
+  padding-block: 1em;
+  background: linear-gradient(to right bottom, #51f, #84f);
+  border-radius: 0 0 100px 0;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "josefin sans", sans-serif;
+}
+a.header p.copyright {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-size: 0.9rem;
+  color: #caf;
+}
+
+.list {
+  margin-top: 100px;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+.list a {
+  position: relative;
+  display: block;
+  aspect-ratio: 683/384;
+  height: 230px;
+  box-shadow: 0 0 20px -7px #000;
+  border-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+.list a:hover {
+  box-shadow: 0 0 17px -4px #000;
+}
+.list a:hover img {
+  scale: 1.06;
+}
+.list a img {
+  height: 100%;
+  margin-block: auto;
+  transition: all 0.2s ease-out;
+}
+.list a p {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  text-shadow: 0 0 10px #fff;
+  font-family: "zen kaku gothic new", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=style.css.map */
